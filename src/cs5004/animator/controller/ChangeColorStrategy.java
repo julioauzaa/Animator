@@ -78,9 +78,11 @@ public class ChangeColorStrategy implements MotionStrategy {
         try {
           RGB color = new RGB(Integer.parseInt(red.getText()), Integer.parseInt(green.getText()),
                   Integer.parseInt(blue.getText()));
-          model.changeColor(name, color, Integer.parseInt(t1.getText()), Integer.parseInt(t2.getText()));
+          model.changeColor(name, color, Integer.parseInt(t1.getText()),
+              Integer.parseInt(t2.getText()));
         } catch (Exception err) {
-          JOptionPane.showMessageDialog(null, "Color change overlap", "Error",
+          JOptionPane.showMessageDialog(null,
+              "Color change overlap", "Error",
                   JOptionPane.ERROR_MESSAGE);
         }
       }
